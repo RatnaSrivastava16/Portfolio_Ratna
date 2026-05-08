@@ -104,5 +104,105 @@ function nextQuestion() {
     scoreEl.textContent = `Final Score: ${score}/${quizData.length}`;
   }
 }
+const cursorCircle = document.querySelector(".cursor-circle");
+
+document.addEventListener("mousemove", (e) => {
+  cursorCircle.style.left = e.clientX + "px";
+  cursorCircle.style.top = e.clientY + "px";
+});
+function setActive(button) {
+  document.querySelectorAll(".tab-btn").forEach(btn => {
+    btn.classList.remove("active");
+  });
+
+  button.classList.add("active");
+}
+
+function showLeetcode(button) {
+
+  setActive(button);
+
+  document.getElementById("solvedCount").innerText = "491+";
+
+  document.getElementById("donutChart").style.background =
+    "conic-gradient(#ffa31a 0deg 300deg, #1f2937 300deg 360deg)";
+
+  document.getElementById("statsContainer").innerHTML = `
+  
+    <div class="stat-card">
+      <p>LEETCODE RANK</p>
+      <h3>2,06,462</h3>
+    </div>
+
+    <div class="stat-card">
+      <p>CONTEST RATING</p>
+      <h3>1411</h3>
+    </div>
+
+    <div class="stat-card">
+      <p>ACCEPTANCE</p>
+      <h3>69.16%</h3>
+    </div>
+
+    <div class="stat-card">
+      <p>ACTIVE DAYS</p>
+      <h3>232</h3>
+    </div>
+
+  `;
+}
+
+function showGFG(button) {
+
+  setActive(button);
+
+  document.getElementById("solvedCount").innerText = "247";
+
+  document.getElementById("donutChart").style.background =
+    "conic-gradient(#22c55e 0deg 220deg, #1f2937 220deg 360deg)";
+
+  document.getElementById("statsContainer").innerHTML = `
+  
+    <div class="stat-card">
+      <p>CODING SCORE</p>
+      <h3>735</h3>
+    </div>
+
+    <div class="stat-card">
+      <p>PROBLEMS SOLVED</p>
+      <h3>247</h3>
+    </div>
+
+    <div class="stat-card">
+      <p>INSTITUTE RANK</p>
+      <h3>1673</h3>
+    </div>
+
+    <div class="stat-card">
+      <p>POTD SOLVED</p>
+      <h3>7</h3>
+    </div>
+
+  `;
+}
+const luckyNumber = 3;
+
+function checkGuess() {
+  const userGuess = document.getElementById("guessInput").value;
+  const message = document.getElementById("gameMessage");
+
+  if (userGuess == luckyNumber) {
+    message.innerText = "Correct! Portfolio unlocked 🎉";
+    message.style.color = "#00ffd5";
+
+    setTimeout(() => {
+      document.getElementById("unlock-game").style.display = "none";
+      document.getElementById("portfolioContent").style.display = "block";
+    }, 800);
+  } else {
+    message.innerText = "Oops! Try again 😄 Hint: It is between 2 and 4.";
+    message.style.color = "#ff4d4d";
+  }
+}
 
 loadQuestion();

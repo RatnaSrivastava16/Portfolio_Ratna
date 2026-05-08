@@ -7,6 +7,22 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <section id="unlock-game" class="unlock-game">
+  <div class="unlock-card">
+    <h1>Welcome to RatnaVerse 🎮</h1>
+    <p>Solve this easy game to unlock my portfolio.</p>
+
+    <h2>Guess the lucky number between 1 and 5</h2>
+
+    <input type="number" id="guessInput" placeholder="Enter number" min="1" max="5" />
+
+    <button onclick="checkGuess()">Unlock Portfolio</button>
+
+    <p id="gameMessage"></p>
+  </div>
+</section>
+
+<div id="portfolioContent" style="display: none;">
 
   <nav>
     <h2>RatnaVerse</h2>
@@ -146,6 +162,74 @@
     </div>
   </section>
 
+<section id="coding-stats" class="section coding-stats-section">
+
+  <h2 class="section-title">Coding Stats</h2>
+
+  <div class="stats-dashboard">
+
+    <div class="donut-box">
+
+      <div class="donut" id="donutChart">
+
+        <div class="donut-center">
+          <h3 id="solvedCount">491+</h3>
+          <p>SOLVED</p>
+        </div>
+
+      </div>
+
+      <div class="legend">
+        <span><b class="lc"></b>LeetCode</span>
+        <span><b class="gfg"></b>GFG</span>
+      </div>
+
+    </div>
+
+    <div class="stats-content">
+
+      <div class="tabs">
+        <button class="tab-btn active" onclick="showLeetcode(this)">
+          LEETCODE
+        </button>
+
+        <button class="tab-btn" onclick="showGFG(this)">
+          GFG
+        </button>
+      </div>
+
+      <div class="stat-grid" id="statsContainer">
+
+        <div class="stat-card">
+          <p>LEETCODE RANK</p>
+          <h3>2,06,462</h3>
+        </div>
+
+        <div class="stat-card">
+          <p>CONTEST RATING</p>
+          <h3>1411</h3>
+        </div>
+
+        <div class="stat-card">
+          <p>ACCEPTANCE</p>
+          <h3>69.16%</h3>
+        </div>
+
+        <div class="stat-card">
+          <p>ACTIVE DAYS</p>
+          <h3>232</h3>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<div class="cursor-circle"></div>
+
   <section id="projects" class="section">
     <h2 class="section-title">Projects</h2>
 
@@ -210,6 +294,7 @@
   <footer>
     <p>Made with HTML, CSS & JavaScript | Ratna Srivastava</p>
   </footer>
+  </div>
 
   <script src="script.js"></script>
 </body>
