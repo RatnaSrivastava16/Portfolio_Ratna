@@ -43,6 +43,7 @@ nav a:hover {
   color: #00ffd5;
 }
 
+
 .hero {
   min-height: 100vh;
   display: flex;
@@ -605,4 +606,72 @@ body {
 #gameMessage {
   margin-top: 18px;
   font-weight: bold;
+}
+@media (max-width: 900px) {
+  nav {
+    padding: 14px 6%;
+  }
+
+  .hero {
+    min-height: auto;
+    flex-direction: column;
+    text-align: center;
+    padding: 110px 6% 50px;
+    gap: 35px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero h2 {
+    font-size: 22px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: center;
+  }
+
+  .buttons a {
+    width: 100%;
+    max-width: 260px;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .hero-image img {
+    width: 220px;
+    height: 220px;
+  }
+
+  .unlock-card {
+    padding: 28px 20px;
+  }
+
+  .unlock-card h1 {
+    font-size: 30px;
+  }
+
+  .unlock-card h2 {
+    font-size: 20px;
+  }
+
+  .cursor-circle {
+    display: none;
+  }
+
+  body {
+    cursor: auto;
+  }
 }
