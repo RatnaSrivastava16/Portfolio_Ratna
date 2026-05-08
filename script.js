@@ -185,8 +185,7 @@ function showGFG(button) {
 
   `;
 }
-const luckyNumber = 3;
-
+let luckyNumber = Math.floor(Math.random() * 5) + 1;
 function checkGuess() {
   const userGuess = document.getElementById("guessInput").value;
   const message = document.getElementById("gameMessage");
@@ -200,7 +199,7 @@ function checkGuess() {
       document.getElementById("portfolioContent").style.display = "block";
     }, 800);
   } else {
-    message.innerText = "Oops! Try again 😄 Hint: It is between 2 and 4.";
+    message.innerText = "Oops! Try again 😉";
     message.style.color = "#ff4d4d";
   }
 }
