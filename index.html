@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ratna Srivastava | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <h2>RatnaVerse</h2>
+
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#profiles">Profiles</a></li>
+      <li><a href="#resumes">Resumes</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#game">Game Zone</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="tag">Hello, I am</p>
+
+      <h1>Ratna Srivastav</h1>
+
+      <h2><span id="typing"></span></h2>
+
+      <p>
+        Software Engineer skilled in Web Development, Android Development,
+        AI/ML, DSA, and building real-world tech solutions.
+      </p>
+
+      <div class="buttons">
+        <a href="#profiles">Explore Profiles</a>
+        <a href="#resumes">Download Resume</a>
+        <a href="tel:+917355345039" class="secondary">Contact Me</a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="assets/profile.png" alt="Ratna Srivastava Profile Photo" />
+    </div>
+  </section>
+
+  <section class="stats">
+    <div>
+      <h3>800+</h3>
+      <p>DSA Problems</p>
+    </div>
+
+    <div>
+      <h3>8.05</h3>
+      <p>CGPA</p>
+    </div>
+
+    <div>
+      <h3>GATE</h3>
+      <p>Qualified</p>
+    </div>
+
+    <div>
+      <h3>LG Soft</h3>
+      <p>Intern</p>
+    </div>
+  </section>
+
+  <section id="profiles" class="section">
+    <h2 class="section-title">My 3 Profiles</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Web Developer</h3>
+        <p>
+          Skilled in HTML, CSS, JavaScript, React.js, Node.js, Express.js,
+          REST APIs, MongoDB, Git, and GitHub.
+        </p>
+
+        <ul>
+          <li>Blog Website</li>
+          <li>AI Lyrics Video Generator</li>
+          <li>Responsive UI Development</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Android Developer</h3>
+        <p>
+          Skilled in Kotlin, XML, Android Studio, MVVM, Room Database,
+          RecyclerView, Retrofit, LiveData, and Coroutines.
+        </p>
+
+        <ul>
+          <li>PocketPilot Finance App</li>
+          <li>Food Ordering App</li>
+          <li>Weather Forecasting App</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>AI/ML Engineer</h3>
+        <p>
+          Skilled in Python, SQL, Scikit-learn, TensorFlow, NLP, Computer Vision,
+          EDA, and Data Visualization.
+        </p>
+
+        <ul>
+          <li>Netflix Recommendation System</li>
+          <li>Bengali NER System</li>
+          <li>ML Model Evaluation</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="resumes" class="section resume-section">
+    <h2 class="section-title">Download Resumes</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Web Developer Resume</h3>
+        <p>React.js, Node.js, Express.js, MongoDB, REST APIs</p>
+        <a class="resume-btn" href="assets/Ratna_WebDeveloper.pdf" download>
+          Download Web Resume
+        </a>
+      </div>
+
+      <div class="card">
+        <h3>Android Developer Resume</h3>
+        <p>Kotlin, XML, MVVM, Room, Retrofit, Android SDK</p>
+        <a class="resume-btn" href="assets/Resume_Android.pdf" download>
+          Download Android Resume
+        </a>
+      </div>
+
+      <div class="card">
+        <h3>AI/ML Resume</h3>
+        <p>Python, TensorFlow, NLP, SQL, Data Analysis</p>
+        <a class="resume-btn" href="assets/Ratna_DataScience.pdf" download>
+          Download AI/ML Resume
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="project-grid">
+      <div class="project">
+        <h3>Blog Website</h3>
+        <p>
+          Full-stack blogging platform with authentication, CRUD operations,
+          protected routes, and REST APIs.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>AI Lyrics Video Generator</h3>
+        <p>
+          Web app that uploads audio and lyrics to generate synchronized lyric videos.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>PocketPilot</h3>
+        <p>
+          Android finance app with expense tracking, budget monitoring,
+          smart overspending alerts, and gamified savings.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>Netflix Recommendation System</h3>
+        <p>
+          ML recommendation system using Python, SQL, Scikit-learn, and SVD.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="game" class="section game-section">
+    <h2 class="section-title">Game Zone</h2>
+
+    <p class="game-text">
+      Mini coding quiz for a cool interactive portfolio touch.
+    </p>
+
+    <div class="quiz-box">
+      <h3 id="question">Question appears here</h3>
+      <div id="options"></div>
+      <p id="score"></p>
+      <button type="button" onclick="nextQuestion()">Next Question</button>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2 class="section-title">Contact Me</h2>
+
+    <p>Email: <a href="mailto:srivastavaratna1611@gmail.com">srivastavaratna1611@gmail.com</a></p>
+    <p>Phone: <a href="tel:+917355345039">+91-7355345039</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/ratna-srivastava16" target="_blank">linkedin.com/in/ratna-srivastava16</a></p>
+    <p>GitHub: <a href="https://github.com/RatnaSrivastava" target="_blank">github.com/RatnaSrivastava</a></p>
+    <p>LeetCode: <a href="https://leetcode.com/u/Ratna1611/" target="_blank">leetcode.com/u/Ratna1611</a></p>
+  </section>
+
+  <footer>
+    <p>Made with HTML, CSS & JavaScript | Ratna Srivastava</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
